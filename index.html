@@ -195,31 +195,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-
-        $(window).on('load', function () {
-            setTimeout(removeLoader, 3000);
-        });
-
-        window.onscroll = function () { scrollFunction() };
-
-        function removeLoader() {
-            $("#pre-loader").fadeOut( "slow" );
-
-        }
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                $('nav').addClass('scrolled');
-                $('#navLogo').removeClass('logo-default');
-                $('#navLogo').addClass('logo-small');
-            } else {
-                $('nav').removeClass('scrolled');
-                $('#navLogo').addClass('logo-default');
-                $('#navLogo').removeClass('logo-small');
-            }
-        }
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
