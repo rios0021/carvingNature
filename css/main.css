@@ -46,7 +46,18 @@ body{
     background-size: cover; */
 }
 .carousel-item > img{
-    max-height: 100%;
+    max-width: 100%;
     background: cover;
 }
 
+@media(max-width: 768px){
+    .logo-default{
+        transition:750ms ease;
+        width: 178px;
+        height: 68px;
+    }
+    .navbar-default{
+        transition:750ms ease;
+        background:#1f0000 !important;
+    }
+}
