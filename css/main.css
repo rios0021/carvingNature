@@ -1,3 +1,83 @@
+/* LOADER */
+#pre-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(23, 22, 22);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: opacity 0.3s linear;
+}
+
+#logo{
+    width: 15rem;
+}
+
+/* path1 length 148.82 */
+#triangle1{
+    stroke-linecap: round;
+    stroke-dasharray: 148.82,148.82;
+    animation: triangle1 3s alternate infinite ease-in-out;
+}
+
+/* path2 length 188.544 */
+#triangle2{
+    stroke-linecap: round;
+    stroke-dasharray: 188.544, 188.544;
+    animation: triangle2 3s alternate infinite ease-in-out ;
+}
+
+/* path3 length 255.076 */
+#triangle3{
+    stroke-linecap: round;
+    stroke-dasharray: 255.076, 255.076;
+    animation: triangle3 3s alternate infinite ease-in-out ;
+}
+
+/* path4 length 356.231 */
+#triangle4{
+    stroke-linecap: round;
+    stroke-dasharray: 356.231, 356.231;
+    animation: triangle4 3s alternate infinite ease-in-out ;
+}
+
+/* path5 length 474.564 */
+#triangle5{
+    stroke-linecap: round;
+    stroke-dasharray: 474.564, 474.564;
+    animation: triangle5 3s alternate infinite ease-in-out ;
+}
+
+@keyframes triangle1{
+    0% { stroke-dashoffset: 148.82;}
+    50%{ stroke-dashoffset: 0;}
+    100%{ stroke-dashoffset: -148.82;}
+}
+@keyframes triangle2{
+    0% { stroke-dashoffset: 188.544;}
+    50%{ stroke-dashoffset: 0;}
+    100%{ stroke-dashoffset: -188.544;}
+}
+@keyframes triangle3{
+    0% { stroke-dashoffset: 255.076;}
+    50%{ stroke-dashoffset: 0;}
+    100%{ stroke-dashoffset: -255.076;}
+}
+@keyframes triangle4{
+    0% { stroke-dashoffset: 356.231;}
+    50%{ stroke-dashoffset: 0;}
+    100%{ stroke-dashoffset: -356.231;}
+}
+@keyframes triangle5{
+    0% { stroke-dashoffset: 474.564;}
+    50%{ stroke-dashoffset: 0;}
+    100%{ stroke-dashoffset: -474.564;}
+}
+
 
 .text-white {
     color: black !important; 
