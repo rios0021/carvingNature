@@ -165,8 +165,11 @@ p{
 }
 /* HOME CARDS */
 #homeCards{
+    /* background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,83,84,1) 39%, rgba(0,176,176,1) 100%); */
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,83,84,1) 39%, rgba(0,176,176,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(21,24,75,1) 28%, rgba(0,176,176,1) 100%);
+    color: whitesmoke;
     /* height: 300px; */
 }
 .card-img-top {
@@ -174,8 +177,35 @@ p{
     height: 40vh;
     object-fit: cover;
 }
+h3{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: .07em;
+}
+.card { background-color: rgba(245, 245, 245, 0.2); }
 
+.zoom{
+    position: relative;
+    overflow: hidden;
+}
 
+.zoom img{
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.zoom:hover img{
+    transform: scale (1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.btn-info{
+    background-color: #005354 !important;
+    border: none;
+}
+/* .card-header, .card-footer { background-color: white;opacity: 1} */
 
 
 
