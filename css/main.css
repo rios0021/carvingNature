@@ -194,6 +194,13 @@ h3{
     letter-spacing: .07em;
 }
 .card { background-color: rgba(245, 245, 245, 0.2); }
+.ejemplo1 { 
+    background-color: rgba(245, 245, 245, 0.0) !important; 
+    border: none;
+}
+.ejemplo2 { 
+    background-color: rgba(245, 245, 245, 0.0) !important; 
+}
 
 .zoom{
     /* position: relative;
@@ -221,27 +228,10 @@ h3{
 
 .cardButton{
     background-color: #008080 !important;
-    /* background-color: red !important; */
     color: whitesmoke;
     border: none;
     border-radius: 30px;
 }
-/* .card-header, .card-footer { background-color: white;opacity: 1} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media(max-width: 990px){
