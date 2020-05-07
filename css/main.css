@@ -219,9 +219,10 @@ h3{
     -webkit-transform: scale(1.1);
 }
 
-.btn-info{
-    /* background-color: #008080 !important; */
-    background-color: red !important;
+.cardButton{
+    background-color: #008080 !important;
+    /* background-color: red !important; */
+    color: whitesmoke;
     border: none;
     border-radius: 30px;
 }
