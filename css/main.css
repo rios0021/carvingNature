@@ -202,8 +202,9 @@ h3{
 }
 
 .btn-info{
-    background-color: #005354 !important;
+    background-color: #008080 !important;
     border: none;
+    border-radius: 30px;
 }
 /* .card-header, .card-footer { background-color: white;opacity: 1} */
 
