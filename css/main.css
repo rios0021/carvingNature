@@ -109,13 +109,19 @@ body{
 
 .logo-small{
     transition:1000ms ease;
-    width: 178px;
-    height: 68px;
+    width: 145px;
+    height: 50px;
 }
 
 .nav-item a{
-    font-size: 1.2em !important;
-
+    font-size: 1.3em !important;
+}
+.navbar-nav{
+    padding-right: 4vw;
+}
+.navbar-nav > li{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Carousel */
@@ -138,6 +144,55 @@ body{
     filter:alpha(opacity=0); /* IE support */
 }
 
+
+
+/* HOME MAIN WELCOME */
+#welcome{
+    color: whitesmoke;
+}
+h2{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: .07em;
+}
+strong{
+    font-size: 1.2em;
+    letter-spacing: .1em;
+}
+p{
+    font-size: 1.3em;
+    line-height: 2em;
+}
+/* HOME CARDS */
+#homeCards{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,83,84,1) 39%, rgba(0,176,176,1) 100%);
+    /* height: 300px; */
+}
+.card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 990px){
     .logo-default{
         transition:750ms ease;
@@ -148,9 +203,21 @@ body{
         transition:750ms ease;
         background:#1f0000 !important;
     }
-    @media (max-width: 688px) {
+    .navbar-nav{
+        padding-right: 0vw;
+    }
+    .navbar-nav .nav-item:not(:first-child) {
+        border-top: 1px solid #442b2c
+        
+        ;
+    }
+    .navbar-nav > li{
+        margin-left:1em;
+        margin-right:1em;
+    }
+}
+@media (max-width: 688px) {
         .carousel-item>img {
             max-height: 1000px;
         }
-    }
 }
