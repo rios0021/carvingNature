@@ -1,5 +1,6 @@
 $(window).on('load', function () {
-    setTimeout(removeLoader, 3000);
+    removeLoader();
+    // setTimeout(removeLoader, 3000);
 });
 
 window.onscroll = function () { scrollFunction() };
