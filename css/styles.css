@@ -144,15 +144,16 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .carousel-inner-item{
     text-align: center;
+    /* width: 100vw; */
+    max-height: 100vh;
+    position: relative;
+    height:100%;
 }
 .carousel-inner-item > img{
-    max-height: 100vh;
-    background-position: center;
-    display: cover;
-    margin: 0 auto;
-    
+    transform: translateY(-15%);
 }
 .carousel-control-prev-icon, .carousel-control-next-icon {
     /* opacity: 0;
