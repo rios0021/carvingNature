@@ -1,3 +1,6 @@
+html{
+    font-size: 62.5%;  /*Make 1Rem = 10px*/
+}
 /* LOADER */
 #pre-loader {
     display: flex;
@@ -78,13 +81,31 @@
     100%{ stroke-dashoffset: -474.564;}
 }
 
-
-.text-white {
-    color: black !important; 
+/* GLOBALS */
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
 }
 
 body{
     background-color: black;
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* UTILITIES */
+
+.fw-700{
+    font-weight: 700;
 }
 
 /* Navigation Bar */
@@ -123,58 +144,46 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
-
-/* Carousel */
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
-    display: block !important;
+.carousel-inner-item{
+    text-align: center;
 }
-
-.carousel-item{
-    /* width: 100vw; */
-    min-height: 300px;
-    /* background: no-repeat ;
-    background-size: cover; */
-}
-.carousel-item > img{
-    max-height: 1500px;
-    background: cover;
+.carousel-inner-item > img{
+    max-height: 100vh;
+    background-position: center;
+    display: cover;
+    margin: 0 auto;
+    
 }
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    opacity: 0;
-    filter:alpha(opacity=0); /* IE support */
+    /* opacity: 0;
+    filter:alpha(opacity=0); IE support */
 }
-
 
 
 /* HOME MAIN WELCOME */
+
 #welcome{
     color: whitesmoke;
 }
-h2{
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 700;
-    letter-spacing: .07em;
-}
+
 strong{
     font-size: 1.2em;
     letter-spacing: .1em;
 }
 p{
-    font-size: 1.3em;
-    line-height: 2em;
+    font-size: 2rem;
+    line-height: 3.5rem;
 }
 /* HOME CARDS */
 #homeCards{
-    /* background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,83,84,1) 39%, rgba(0,176,176,1) 100%); */
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(21,24,75,1) 28%, rgba(0,176,176,1) 100%);
     color: whitesmoke;
-    /* height: 300px; */
 }
 .card-img-top {
     position: absolute;
-    display: block;
+    background-position: center;
+    display: cover;
     max-width: 100%;
     max-height: 100%;
     left: 0;
@@ -184,21 +193,9 @@ p{
     margin: auto;
 }
 
-h3{
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 700;
-    letter-spacing: .07em;
-}
-
 .card { 
-    background-color: rgba(245, 245, 245, 0.2); 
-}
-.ejemplo1 { 
     background-color: rgba(245, 245, 245, 0.0) !important; 
     border: none;
-}
-.ejemplo2 { 
-    background-color: rgba(245, 245, 245, 0.0) !important; 
 }
 
 .zoom{
@@ -211,7 +208,6 @@ h3{
     padding: 75% 0 0 0;
     overflow: hidden;
 }
-
 
 .zoom img{
     transition: all 0.3s;
@@ -232,6 +228,10 @@ h3{
     border-radius: 30px;
 }
 
+
+
+
+/** MEDIA QUERIES **/
 
 @media(max-width: 990px){
     .logo-default{
