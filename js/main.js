@@ -11,7 +11,7 @@ function removeLoader() {
 }
 
 function scrollFunction() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         $('nav').addClass('scrolled');
         $('#navLogo').removeClass('logo-default');
         $('#navLogo').addClass('logo-small');

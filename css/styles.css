@@ -1,5 +1,19 @@
+/* Colors */
+:root{
+    /* --primary: #C49E76; */
+    --primary: #92704a;
+    --secondary: #6A4838;
+    --terciary: #F3DDBE;
+    --textColor: #2A1914;
+    --slateGray: #B9BBBF;
+}
+
 html{
-    font-size: 62.5%;  /*Make 1Rem = 10px*/
+    box-sizing: border-box;
+    font-size: 62.5%; /*Make 1rem = 10px*/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
 }
 /* LOADER */
 #pre-loader {
@@ -83,39 +97,69 @@ html{
 
 /* GLOBALS */
 h1{
-    font-size: 3.8rem;
+    font-size: 4rem;
+    color: var(--textColor);
 }
 h2{
-    font-size: 3.5rem;
+    font-size: 3.7rem;
+    color: var(--textColor);
 }
 h3{
-    font-size: 3rem;
+    font-size: 3.2rem;
+    color: var(--textColor);
 }
 h4{
-    font-size: 2.6rem;
+    font-size: 2.8rem;
+    color: var(--textColor);
+}
+p{
+    color: var(--textColor);
 }
 
 body{
-    background-color: black;
+    background-color: var(--terciary);
     font-size: 1.6rem;
     line-height: 2;
     font-family: 'Fira Sans', sans-serif;
+    color: var(--textColor);
 }
 
+.button{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 1.3rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3rem;
+    transition: all .3s;
+}
+.button:hover{
+    color: var(--textColor);
+    font-weight: 700;
+    text-decoration: none;
+}
+.primary-button{
+    background-color: var(--primary);
+}
 /* UTILITIES */
 
 .fw-700{
     font-weight: 700;
 }
 
+
 /* Navigation Bar */
+
 .navbar-default{
     transition:750ms ease;
     background:transparent !important;
 }
 
 .navbar-default.scrolled{
-    background:#1f0000 !important;
+    background:var(--textColor) !important;
 }
 
 .navbar-brand{
@@ -147,7 +191,6 @@ body{
 
 .carousel-inner-item{
     text-align: center;
-    /* width: 100vw; */
     max-height: 100vh;
     position: relative;
     height:100%;
@@ -155,32 +198,38 @@ body{
 .carousel-inner-item > img{
     transform: translateY(-15%);
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    /* opacity: 0;
-    filter:alpha(opacity=0); IE support */
-}
+/* .carousel-control-prev-icon, .carousel-control-next-icon {
+    opacity: 0;
+    filter:alpha(opacity=0); IE support
+} */
 
 
-/* HOME MAIN WELCOME */
+/* HOME welcome */
 
-#welcome{
-    color: whitesmoke;
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40rem;
+}
+.welcome p:first-of-type::after{
+    content: '';
+    display: block;
+    width: 20%;
+    height: .2rem;
+    background-color: #71b100;
+    margin-top: 0rem;
+    position: absolute;
+    left: 40%;
 }
 
-strong{
-    font-size: 1.2em;
-    letter-spacing: .1em;
+.welcome p{
+    font-size: 2.2rem;
+    font-weight: 700;
 }
-p{
-    font-size: 2rem;
-    line-height: 3.5rem;
-}
-/* HOME CARDS */
-#homeCards{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(21,24,75,1) 28%, rgba(0,176,176,1) 100%);
-    color: whitesmoke;
-}
+
+/*HOME card-container*/
+
 .card-img-top {
     position: absolute;
     background-position: center;
@@ -198,38 +247,30 @@ p{
     background-color: rgba(245, 245, 245, 0.0) !important; 
     border: none;
 }
+.card-title{
+    padding-top: 2rem;
+}
 
 .zoom{
-    /* position: relative;
-    overflow: hidden; */
     display: block;
     width: 100%;
     position: relative;
     height: 0;
     padding: 75% 0 0 0;
     overflow: hidden;
+    
 }
-
-.zoom img{
+.zoom{
     transition: all 0.3s;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
 }
 
-.zoom:hover img{
-    transform: scale (1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+.zoom:hover {
+    transform: scale (1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 }
-
-.cardButton{
-    background-color: #008080 !important;
-    color: whitesmoke;
-    border: none;
-    border-radius: 30px;
-}
-
-
 
 
 /** MEDIA QUERIES **/
@@ -242,7 +283,7 @@ p{
     }
     .navbar-default{
         transition:750ms ease;
-        background:#1f0000 !important;
+        background:var(--textColor) !important;
     }
     .navbar-nav{
         padding-right: 0vw;
@@ -253,12 +294,12 @@ p{
         ;
     }
     .navbar-nav > li{
-        margin-left:1em;
-        margin-right:1em;
+        margin-left:1rem;
+        margin-right:1rem;
     }
 }
 @media (max-width: 688px) {
         .carousel-item>img {
-            max-height: 1000px;
+            max-height: 100rem;
         }
 }
