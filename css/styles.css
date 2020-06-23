@@ -290,7 +290,7 @@ body{
 }
 /* HOME products-section */
 .products-section{
-    margin-top: 5rem;
+    margin: 5rem 0;
 }
 .products-section h2{
     font-weight: 900;
@@ -306,7 +306,6 @@ body{
 }
 .products-text{
     text-align: center;
-    height: 30rem;
     margin: 3rem 0;
 }
 .products-text p{
@@ -345,6 +344,11 @@ body{
         margin-left:1rem;
         margin-right:1rem;
     }
+    .products-text p{
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
 }
 @media (max-width: 688px) {
     #carouselBanner{
@@ -357,5 +361,10 @@ body{
         font-size: 1.7rem;
         font-weight: 700;
         line-height: 1.5;
+    }
+    .products-text p{
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 1.2;
     }
 }
