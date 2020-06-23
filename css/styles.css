@@ -160,6 +160,7 @@ body{
 
 .navbar-default.scrolled{
     background:var(--textColor) !important;
+    
 }
 
 .navbar-brand{
@@ -180,7 +181,7 @@ body{
 
 .navbar-nav > .active a{
     color: white!important;
-    text-decoration: underline #b2d33e ;
+    text-decoration: underline #b2d33e;
 }
 
 .nav-item a{
@@ -310,12 +311,15 @@ body{
     }
 }
 @media (max-width: 688px) {
-        .carousel-item>img {
-            max-height: 100rem;
-        }
-        .welcome p{
-            font-size: 1.7rem;
-            font-weight: 700;
-            line-height: 1.5;
-        }
+    #carouselBanner{
+        margin-top: 5rem;
+    }
+    .carousel-item>img {
+        max-height: 100rem;
+    }
+    .welcome p{
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
 }
