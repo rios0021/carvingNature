@@ -96,6 +96,9 @@ html{
 }
 
 /* GLOBALS */
+img{
+    max-width: 100%;
+}
 h1{
     font-size: 4rem;
     color: var(--textColor);
@@ -222,6 +225,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: center;
     height: 40rem;
 }
 .welcome p:first-of-type::after{
@@ -238,6 +242,7 @@ body{
 .welcome p{
     font-size: 2.2rem;
     font-weight: 700;
+    text-align: center;
 }
 
 /*HOME card-container*/
@@ -282,6 +287,37 @@ body{
     transform: scale (1.2);
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
+}
+/* HOME products-section */
+.products-section{
+    margin-top: 5rem;
+}
+.products-section h2{
+    font-weight: 900;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.products-section h3{
+    font-weight: 900;
+}
+.products-img img{
+    max-height: 80rem ;
+}
+.products-text{
+    text-align: center;
+    height: 30rem;
+    margin: 3rem 0;
+}
+.products-text p{
+    padding: 2rem 4rem;
+    font-size: 2.1rem;
+}
+.products-section > .row{
+    padding-top: 10rem!important;
+}
+.products-section > .row:first-of-type{
+    padding-top: 0rem!important;
 }
 
 
