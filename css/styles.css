@@ -163,7 +163,7 @@ body{
 }
 
 .navbar-brand{
-    padding-left: 2em;
+    padding-left: 2rem;
 }
 
 .logo-default{
@@ -178,12 +178,23 @@ body{
     height: 50px;
 }
 
+.navbar-nav > .active a{
+    color: white!important;
+    text-decoration: underline #b2d33e ;
+}
+
 .nav-item a{
-    font-size: 1.3em !important;
+    font-size: 1.4em !important;
+    color: var(--terciary)!important;
+    transition: all .3s;
+}
+.nav-item a:hover{
+    color: #b2d33e!important;
 }
 .navbar-nav{
     padding-right: 4vw;
 }
+
 .navbar-nav > li{
     margin-left: 10px;
     margin-right: 10px;
@@ -301,5 +312,10 @@ body{
 @media (max-width: 688px) {
         .carousel-item>img {
             max-height: 100rem;
+        }
+        .welcome p{
+            font-size: 1.7rem;
+            font-weight: 700;
+            line-height: 1.5;
         }
 }
