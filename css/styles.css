@@ -437,6 +437,17 @@ body{
         font-weight: 500;
         line-height: 1.2;
     }
+    .social-media-list{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .social-media-list .social-media-icon{
+        height: 3rem;
+        margin-top: 2rem;
+        display: flex;
+    }
     .footer-nav{
         padding-top: 0;
     }
