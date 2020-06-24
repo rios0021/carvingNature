@@ -331,7 +331,9 @@ body{
 .footer{
     background-color: black;
 }
-
+.footer hr{
+    border-top: 1px solid white;
+}
 .social-media-list{
     list-style: none;
 }
@@ -382,7 +384,7 @@ body{
 }
 
 /** MEDIA QUERIES **/
-@media(max-width: 990px){
+@media(max-width: 991.98px){
     .logo-default{
         transition:750ms ease;
         width: 178px;
@@ -413,8 +415,9 @@ body{
         line-height: 1.5;
         margin: 0;
     }
+    
 }
-@media (max-width: 688px) {
+@media (max-width: 767.98px) {
     #carouselBanner{
         margin-top: 5rem;
     }
@@ -433,5 +436,8 @@ body{
         font-size: 1.7rem;
         font-weight: 500;
         line-height: 1.2;
+    }
+    .footer-nav{
+        padding-top: 0;
     }
 }
