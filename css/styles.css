@@ -340,6 +340,10 @@ body{
 .social-media-list .social-media-icon{
     height: 3rem;
 }
+.social-media-list .facebook-icon{
+    height: 2.4rem;
+    padding-left: .4rem;
+}
 .footer-nav{
     list-style: none;
     padding-top: 6rem;
@@ -444,6 +448,11 @@ body{
         margin-top: 2rem;
         display: flex;
         height: 4rem;
+    }
+    .social-media-list .facebook-icon{
+        height: 3rem;
+        padding-left: 2rem;
+        margin-top: 2.5rem;
     }
     
     .footer-nav{
