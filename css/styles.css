@@ -156,7 +156,9 @@ body{
 .fw-700{
     font-weight: 700;
 }
-
+.center-text{
+    text-align: center;
+}
 
 /* Navigation Bar */
 
@@ -216,7 +218,7 @@ body{
     position: relative;
     height:100%;
 }
-.carousel-inner-item > img{
+.carousel-inner-item > img:not(.different){
     transform: translateY(-15%);
 }
 /* .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -226,7 +228,6 @@ body{
 
 
 /* HOME welcome */
-
 .welcome{
     display: flex;
     flex-direction: column;
@@ -280,8 +281,7 @@ body{
     position: relative;
     height: 0;
     padding: 75% 0 0 0;
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
 .zoom{
     transition: all 0.3s;
@@ -385,7 +385,7 @@ body{
 }
 
 /** MEDIA QUERIES **/
-@media(max-width: 991.98px){
+@media(max-width: 992px){
     .logo-default{
         transition:750ms ease;
         width: 178px;
@@ -418,9 +418,9 @@ body{
     }
     
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     #carouselBanner{
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
     .carousel-item>img {
         max-height: 100rem;
@@ -461,5 +461,67 @@ body{
     
     .footer-nav{
         padding-top: 0;
+    }
+}
+
+
+
+/* ABOUT header */
+.about-header{
+    background-image: url(../img/about/bones.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    margin-top: 8rem;
+    
+}
+.header-text{
+    height: 40rem;
+    padding-top: 15rem;
+}
+
+/* ABOUT content */
+.content-about{
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+    margin-bottom: 10rem;
+    row-gap: 2rem;
+}
+.image-about{
+    grid-row: 2/3;
+}
+.image-about figcaption{
+    font-weight: 700;
+}
+.text-about h2{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+}
+
+@media (min-width: 768px){
+    .header-text{
+        padding-top: 18vw;
+    }
+    .header-text h1{
+        font-size: 6rem;
+    }
+
+    .content-about{
+        margin: 5rem 2rem;
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        column-gap: 3rem;
+    }
+    .image-about{
+        grid-row: 1/2;
+    }
+}
+@media (min-width: 992px){
+    .about-header {
+        height: 40vw;
+        background-position: center bottom;
     }
 }
