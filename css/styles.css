@@ -492,7 +492,11 @@ body{
     grid-row: 2/3;
 }
 .image-about figcaption{
+    line-height: 1.7;
     font-weight: 700;
+}
+.text-about p{
+    line-height: 1.7;
 }
 .text-about h2{
     font-weight: 900;
@@ -508,7 +512,7 @@ body{
     .header-text h1{
         font-size: 6rem;
     }
-
+    
     .content-about{
         margin: 5rem 2rem;
         display: grid;
@@ -517,6 +521,12 @@ body{
     }
     .image-about{
         grid-row: 1/2;
+    }
+    .image-about figcaption{
+        line-height: 2;
+    }
+    .text-about p{
+        line-height: 2;
     }
 }
 @media (min-width: 992px){
