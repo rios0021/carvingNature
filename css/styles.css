@@ -467,7 +467,7 @@ body{
 
 
 /* ABOUT header */
-.about-header{
+.header-about{
     background-image: url(../img/about/bones.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -476,7 +476,7 @@ body{
     margin-top: 8rem;
     
 }
-.header-text{
+.header-about .header-text{
     height: 40rem;
     padding-top: 15rem;
 }
@@ -506,7 +506,7 @@ body{
 }
 
 @media (min-width: 768px){
-    .header-text{
+    .header-about .header-text{
         padding-top: 18vw;
     }
     .header-text h1{
@@ -530,8 +530,46 @@ body{
     }
 }
 @media (min-width: 992px){
-    .about-header {
+    .header-about {
         height: 40vw;
         background-position: center bottom;
+    }
+}
+
+/* Policies */
+.header-policies .header-text{
+    height: 15rem;
+    padding-top: 8rem;
+}
+.content-policies{
+    padding: 2rem 0;
+}
+.content-policies h2{
+    margin-top:3rem;
+}
+.content-policies p{
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+.content-policies h2::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -100px; 
+    height: 100px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+@media (min-width: 768px) {
+    .header-policies .header-text{
+        height: 18rem;
+    }
+    .content-policies p{
+        font-size: 2rem;
+        line-height: 2;
+    }
+    .content-policies{
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 3rem 0;
     }
 }
