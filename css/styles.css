@@ -603,9 +603,15 @@ div.copyright p{
     background-repeat: no-repeat;
     background-size:  cover;
     background-position: center !important;
-    background-attachment: fixed;
+    background-attachment: initial;
+    
     -webkit-filter: brightness(.4);
     filter: brightness(.4);
+}
+@media (min-width: 992px) {
+    .parallax::before{
+        background-attachment: fixed;
+    }
 }
 .header-how{
     position: relative;
