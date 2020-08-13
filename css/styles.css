@@ -601,8 +601,8 @@ div.copyright p{
     top: 0;
     left: 0;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-size:  cover;
+    background-position: center !important;
     background-attachment: fixed;
     -webkit-filter: brightness(.4);
     filter: brightness(.4);
